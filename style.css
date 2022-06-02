@@ -1,0 +1,53 @@
+body{
+    background: #f4f5f9;
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.navbar-brand {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.blockquote {
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 1;
+}
+
+.blockquote-footer {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin: 10px;
+    line-height: 2;
+}
+
+.nav-link {
+    letter-spacing: 5px;
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+    letter-spacing: 5px;
+    border-radius: 10px;
+}
+
+.menu {
+    background-color: transparent;
+    border-color: transparent;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.boxbutton {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 100px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.menugroup {
+    margin-top: 50px;
+}

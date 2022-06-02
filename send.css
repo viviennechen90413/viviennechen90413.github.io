@@ -1,0 +1,51 @@
+body{
+    background: #f4f5f9;
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.navbar-brand {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.nav-link {
+    letter-spacing: 5px;
+}
+
+.send {
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.form-label {
+    letter-spacing: 5px;
+}
+
+.btn {
+    letter-spacing: 10px;
+}
+
+.menu {
+    background-color: transparent;
+    border-color: transparent;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.boxbutton {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 100px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.menugroup {
+    margin-top: 50px;
+}

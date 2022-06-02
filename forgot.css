@@ -1,0 +1,30 @@
+body {
+    background: #f4f5f9;
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.navbar-brand {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.form-label-account {
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+
+.form-label-password {
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+
+.form-text {
+    font-size: xx-small;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.btn {
+    letter-spacing: 5px
+}

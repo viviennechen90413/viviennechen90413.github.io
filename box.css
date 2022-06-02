@@ -1,0 +1,47 @@
+body{
+    background: #f4f5f9;
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.album {
+    width: 200px;
+    height: 200px;
+}
+
+.navbar-brand {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.nav-link {
+    letter-spacing: 5px;
+}
+
+.box {
+    letter-spacing: 10px;
+    margin-bottom: 80px;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.menu {
+    background-color: transparent;
+    border-color: transparent;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.boxbutton {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 100px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.menugroup {
+    margin-top: 50px;
+}
