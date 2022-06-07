@@ -15,9 +15,6 @@
 </head>
 
 <body>
-    <div class="cursor">
-        <img src="cursor.png" alt="">
-    </div>
     <div class="loading">
         <img src="gif.gif" alt="#">
     </div>
@@ -70,14 +67,6 @@
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
         <script>
-            $(document).on("mousemove", function (t) {
-                var o = t.clientX,
-                    n = t.clientY;
-                $(".cursor").css({
-                    top: n,
-                    left: o
-                })
-            });
             $(function () {
                 $(window).scroll(function () {
                     if ($(document).scrollTop() > 50) {
@@ -88,7 +77,7 @@
                 });
             });
             $(window).on('load', function () {
-                $('.loading').fadeOut(3000);
+                $('.loading').fadeOut(2000);
             });
         </script>
 </body>

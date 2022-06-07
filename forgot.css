@@ -28,3 +28,22 @@ body {
 .btn {
     letter-spacing: 5px
 }
+
+.active {
+    background: #333;
+    color: #fff;
+}
+
+
+.loading {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ccc;
+    color: #353535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

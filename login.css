@@ -30,12 +30,6 @@ body {
     
 }
 
-.cursor {
-    position: fixed;
-    width: 5px;
-    height: 5px;
-}
-
 .active {
     background: #333;
     color: #fff;
