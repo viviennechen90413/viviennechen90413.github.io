@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <div class="cursor">
+        <img src="cursor.png" alt="">
+    </div>
     <div class="loading">
         <img src="gif.gif" alt="#">
     </div>
@@ -48,13 +51,13 @@
                         </div>
                         <div class="mb-3 btn-group w-100" role="group" aria-label="Basic outlined example">
                             <a href="enroll.html">
-                                <button type="button" class="btn byn-secondary">註冊帳號</button>
+                                <button type="button" class="btn">註冊帳號</button>
                             </a>
                             <a href="forgot.html">
-                                <button type="button" class="btn byn-secondary">忘記密碼</button>
+                                <button type="button" class="btn">忘記密碼</button>
                             </a>
                         </div>
-                        <button type="submit" class="btn btn-danger w-100 rounded-pill shadow mb-5">登入
+                        <button type="submit" class="btn btn-secondary w-100 rounded-pill shadow mb-5">登入
                         </button>
                     </form>
                     <div class="col-4"></div>
@@ -67,6 +70,14 @@
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
         <script>
+            $(document).on("mousemove", function (t) {
+                var o = t.clientX,
+                    n = t.clientY;
+                $(".cursor").css({
+                    top: n,
+                    left: o
+                })
+            });
             $(function () {
                 $(window).scroll(function () {
                     if ($(document).scrollTop() > 50) {

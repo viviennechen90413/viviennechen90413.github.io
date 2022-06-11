@@ -27,7 +27,11 @@ body {
 
 .btn {
     letter-spacing: 5px
-    
+}
+
+.btn:hover {
+    background: #da3849;
+    border: #da3849;
 }
 
 .active {
@@ -47,4 +51,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.cursor {
+    position: fixed;
+    pointer-events: none;
 }

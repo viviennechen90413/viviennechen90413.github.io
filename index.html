@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <div class="cursor">
+        <img src="cursor.png" alt="">
+    </div>
     <div class="loading">
         <img src="gif.gif" alt="#">
     </div>
@@ -73,12 +76,12 @@
                         <div class="col"></div>
                         <div class="col">
                             <a href="send.html">
-                                <button type="button" class="btn btn-danger w-100">送件</button>
+                                <button type="button" class="btn btn-secondary w-100">送件</button>
                             </a>
                         </div>
                         <div class="col">
                             <a href="receive.html">
-                                <button type="button" class="btn btn-danger w-100">收件</button>
+                                <button type="button" class="btn btn-secondary w-100">收件</button>
                             </a>
                         </div>
                         <div class="col"></div>
@@ -92,6 +95,14 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script>
+        $(document).on("mousemove", function (t) {
+            var o = t.clientX,
+                n = t.clientY;
+            $(".cursor").css({
+                top: n,
+                left: o
+            })
+        });
         $(function () {
             $(window).scroll(function () {
                 if ($(document).scrollTop() > 50) {

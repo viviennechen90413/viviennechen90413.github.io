@@ -15,6 +15,9 @@
 </head>
 
 <body>
+  <div class="cursor">
+    <img src="cursor.png" alt="">
+  </div>
   <div class="loading">
     <img src="gif.gif" alt="#">
   </div>
@@ -59,16 +62,16 @@
           </div>
           <div class="d-grid gap-2">
             <a href="420.html">
-              <button class="btn btn-danger w-50 rounded-pill shadow" type="button">4/20</button>
+              <button class="btn btn-secondary w-50 rounded-pill shadow" type="button">4/20</button>
             </a>
             <a href="416.html">
-              <button class="btn btn-danger w-50 rounded-pill shadow" type="button">4/16</button>
+              <button class="btn btn-secondary w-50 rounded-pill shadow" type="button">4/16</button>
             </a>
             <a href="415.html">
-              <button class="btn btn-danger w-50 rounded-pill shadow" type="button">4/15</button>
+              <button class="btn btn-secondary w-50 rounded-pill shadow" type="button">4/15</button>
             </a>
             <a href="413.html">
-              <button class="btn btn-danger w-50 rounded-pill shadow" type="button">4/13</button>
+              <button class="btn btn-secondary w-50 rounded-pill shadow" type="button">4/13</button>
             </a>
           </div>
         </div>
@@ -80,6 +83,14 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script>
+    $(document).on("mousemove", function (t) {
+      var o = t.clientX,
+        n = t.clientY;
+      $(".cursor").css({
+        top: n,
+        left: o
+      })
+    });
     $(function () {
       $(window).scroll(function () {
         if ($(document).scrollTop() > 50) {

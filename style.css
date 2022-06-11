@@ -33,6 +33,11 @@ body{
     border-radius: 10px;
 }
 
+.btn:hover {
+    background: #da3849;
+    border: #da3849;
+}
+
 .menu {
     background-color: transparent;
     border-color: transparent;
@@ -69,4 +74,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.cursor {
+    position: fixed;
+    pointer-events: none;
 }

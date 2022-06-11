@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <div class="cursor">
+        <img src="cursor.png" alt="">
+    </div>
     <div class="loading">
         <img src="gif.gif" alt="#">
     </div>
@@ -42,7 +45,7 @@
                                 aria-describedby="emailHelp">
                         </div>
                         <a href="login.html">
-                            <button type="submit" class="btn btn-danger w-100 rounded-pill shadow mb-5">送出</button>
+                            <button type="submit" class="btn btn-secondary w-100 rounded-pill shadow mb-5">送出</button>
                         </a>
                     </form>
                 </div>
@@ -56,6 +59,14 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script>
+        $(document).on("mousemove", function (t) {
+            var o = t.clientX,
+                n = t.clientY;
+            $(".cursor").css({
+                top: n,
+                left: o
+            })
+        });
         $(function () {
             $(window).scroll(function () {
                 if ($(document).scrollTop() > 50) {
